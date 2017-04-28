@@ -21,7 +21,7 @@ function createServer(){
 	});
 	//app.use(express.static(path.join(__dirname, 'static')));
 	var port = process.env.PORT || 5300;
-	var server = https.createServer(app).listen(5300,function(){
+	var server = https.createServer(app).listen(port,function(){
 		var host = server.address().address;
 		var port = server.address().port;
 		/*console.log("host: ",host);
